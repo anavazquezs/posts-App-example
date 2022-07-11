@@ -7,6 +7,7 @@ function NavBar() {
   const navigate = useNavigate();
   const { state, dispatch } = useContext(UserContext);
 
+  //Función para el logout
   const logout = (event) => {
     event.preventDefault();
     localStorage.clear();
@@ -14,6 +15,7 @@ function NavBar() {
     navigate('/login');
   };
 
+  //Menú dinámico que depende de si el usuario está o no logueado
   const dynamicMenu = () => {
     
     if(state) {
@@ -28,8 +30,7 @@ function NavBar() {
     }
   };
 
-
-
+  //Renderizado
     return (
         <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">

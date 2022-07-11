@@ -1,0 +1,9 @@
+.card-img-height {
+    height: 90vh;
+}
+
+@media(max-width: 768px) {
+    .card-img-height {
+        height: 70vh;
+    }
+}

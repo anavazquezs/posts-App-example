@@ -1,0 +1,9 @@
+.contact-form-container {
+    width: 60vw;
+}
+
+@media (max-width: 798px) {
+    .contact-form-container {
+        width: 85vw;
+    }
+}
